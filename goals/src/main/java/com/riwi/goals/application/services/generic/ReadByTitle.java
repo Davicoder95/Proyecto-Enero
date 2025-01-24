@@ -1,7 +1,7 @@
 package com.riwi.goals.application.services.generic;
 
-import java.util.Optional;
+import java.util.List;
 
 public interface ReadByTitle <Entity,Title>{
-    public Optional<Entity>readByTitle(Title title);
+    public List<Entity> readByTitle(Title title);
 }

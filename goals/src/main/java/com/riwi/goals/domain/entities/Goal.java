@@ -2,9 +2,7 @@ package com.riwi.goals.domain.entities;
 
 import com.riwi.goals.domain.enums.Status;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
@@ -13,8 +11,10 @@ import java.time.LocalDateTime;
 @Entity
 @Table
 @Data
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Goal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

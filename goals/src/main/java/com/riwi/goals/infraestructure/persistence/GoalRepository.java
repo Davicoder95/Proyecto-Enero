@@ -12,6 +12,6 @@ public interface GoalRepository  extends JpaRepository< Goal, Long> {
 
     List<Goal> findByTitle(String title);
 
-    List<Goal> findByStatus( Status status);
+    List<Goal> findByStatus(Status status);
 
 }
